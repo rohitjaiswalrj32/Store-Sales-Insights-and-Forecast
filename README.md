@@ -1,7 +1,7 @@
-# Sales Analysis & Forecasting Dashboard  
+# Store Sales Analysis & Forecasting Dashboard  
 
 ## 📌 Project Overview  
-The **Sales Analysis & Forecasting Dashboard** is designed to analyze historical sales data and forecast future trends using **Power BI** and **Python (Prophet)**.  
+The **Store Sales Analysis & Forecasting Dashboard** is designed to analyze historical sales data and forecast future trends using **Power BI** and **Python (Prophet)**.  
 It helps businesses gain insights into revenue trends, top-performing products, and sales by region, while also providing **6-month sales forecasts** for strategic decision-making.  
 
 ---
@@ -25,18 +25,11 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 | **GitHub**                | Version control & project documentation  |
 | **Kaggle Dataset**        | Source of historical store sales data    |
 
----
+--- 
 
-## 📂 Dataset Information  
+## 📂 Dataset Source  
 
-**Dataset 1: sales_data_excel.csv** (Historical Sales Data)  
-- **Key Columns:** Date, Revenue, Units Sold, Product Name, Category, Region, City Type, Outlet Type, Discount, Profit, Order ID  
-- **Size:** ~100,000 rows  
-- **Source:** [Store Data (Kaggle)](https://www.kaggle.com/datasets/abuhumzakhan/store-data)  
-
-**Dataset 2: combined_actual_forecast.csv** (Actual + Forecasted Sales)  
-- **Columns:** Date, Revenue, Type (Actual/Forecast)  
-- **Generated via:** Forecasting using Facebook Prophet  
+[Store Data (Kaggle)](https://www.kaggle.com/datasets/abuhumzakhan/store-data)
 
 ---
 
