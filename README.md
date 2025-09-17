@@ -15,10 +15,15 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 ---
 
 ## 🛠️ Technologies Used  
-- **Power BI** – For interactive dashboards and visualizations  
-- **Python (Pandas, Prophet, Matplotlib)** – For data cleaning & forecasting  
-- **Excel** – For quick pivot table analysis and intermediate reporting  
-- **Kaggle Dataset** – Historical sales data  
+
+| Technology / Tool        | Purpose                                  |
+|---------------------------|------------------------------------------|
+| **Python (Pandas, Matplotlib, Seaborn, Prophet)** | Data Cleaning, EDA & Forecasting |
+| **MySQL / SQL**          | SQL-based querying, aggregation & analysis (MySQL Workbench) |
+| **Power BI**              | Interactive dashboards & reports         |
+| **Excel**                 | Pivot Tables, Charts & ad-hoc analysis   |
+| **GitHub**                | Version control & project documentation  |
+| **Kaggle Dataset**        | Source of historical store sales data    |
 
 ---
 
@@ -46,26 +51,62 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 
 ---
 
-## 📊 Dashboard Content  
+## 🗄️ SQL Analysis  
 
-### 1️⃣ KPI Cards  
-- **Total Revenue** – Sum of Revenue  
-- **Total Units Sold** – Sum of Units Sold  
-- **Total Orders** – Count of Order IDs  
-- **Average Revenue per Order** – Sum(Revenue)/Count(Order ID)  
+SQL queries performed in **MySQL Workbench**:  
+- **Top 5 Products by Revenue**  
+- **Monthly Revenue Trends**  
+- **Revenue by Region & Category**  
+- **Average Revenue per Order**  
+- **Low Sales Products** for improvement opportunities
 
-### 2️⃣ Sales Trend Analysis  
-- **Historical Trend** – Line chart using sales_data_excel.csv  
-- **Actual vs Forecast Trend** – Line chart using combined_actual_forecast.csv  
+> **Note:** Use MySQL for fast aggregation and historical trend computations before visualizing in Power BI.
 
-### 3️⃣ Top Products  
-- Bar chart showing Top 10 products by revenue  
+---
 
-### 4️⃣ Revenue by Category & Region  
-- Pie / Donut charts for quick visual distribution  
+## 📊 Exploratory Data Analysis (EDA) in Python  
 
-### 5️⃣ Interactive Filters & Slicers  
-- Date, Region, Category, Outlet Type, Product Name  
+- **Monthly Revenue Trends** (Line Chart)  
+- **Top Products by Revenue** (Bar Chart)  
+- **Revenue by Region & Category** (Pie / Donut Chart)  
+- **Units Sold vs Revenue Correlation** (Scatter Plot & Heatmap)  
+- **Revenue Distribution by Category** (Box Plot)  
+
+---
+
+## 📈 Forecasting with Prophet  
+
+- **Daily Revenue Aggregation** from historical data  
+- **Prophet model** for next 6 months (180 days)  
+- Generated **forecast plots** for trend & seasonality  
+- Exported forecast data → `combined_actual_forecast.csv`  
+
+---
+
+## 📑 Excel Analysis  
+
+- Created **Pivot Tables** for Revenue by Month, Category, Region & Product  
+- Built **Pivot Charts** → Line, Bar & Pie Charts  
+- Combined **Actual vs Forecast** data in one Excel workbook: `Sales_Actual_vs_Forecast.xlsx`  
+
+---
+
+## 📉 Power BI Dashboard  
+
+### **Dashboard Features**  
+1️⃣ **KPI Cards**: Total Revenue, Total Units Sold, Total Orders, Avg Revenue per Order  
+2️⃣ **Sales Trends**:  
+   - Historical Monthly Sales Trend  
+   - Actual vs Forecast Sales Trend  
+3️⃣ **Top 10 Products by Revenue**: Bar Chart  
+4️⃣ **Revenue by Region & Category**: Donut / Pie Chart  
+5️⃣ **Filters/Slicers**: Date, Region, Outlet Type, Category, Product  
+
+**Layout Recommendation:**  
+- **Top Row:** KPI Cards  
+- **Middle Row:** Sales Trends (Actual vs Forecast)  
+- **Bottom Row:** Product & Region Analysis  
+- **Right Side:** Slicers for interactivity  
 
 ---
 
@@ -76,22 +117,20 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 
 ## 🚀 Steps to Recreate  
 
-1. Download both datasets:  
-   - sales_data_excel.csv  
-   - combined_actual_forecast.csv  
-
-2. Open Power BI → Load both datasets via **Get Data → Text/CSV**.  
-3. Verify data types (Date → Date, Revenue → Decimal Number).  
-4. Build KPIs, charts, and slicers as per the dashboard content above.  
-5. Add Actual vs Forecast line chart using the combined dataset.  
-6. Arrange visuals in a clean layout with proper titles and slicers.  
+1. **Clone the Repository** → Download datasets & code.  
+2. **Run Data Cleaning & EDA** → Python scripts in Google Colab.  
+3. **Execute SQL Queries** → Import cleaned dataset into MySQL and run aggregations.  
+4. **Build Forecast** → Run Prophet forecasting script in Colab.  
+5. **Create Dashboard** → Import datasets into Power BI, build visuals as per guide.  
 
 ---
 
-## 📈 Key Insights from Dashboard  
-- Clear upward/downward sales trends by month and region.  
-- Top-performing products drive majority of revenue.  
-- Forecast provides a 6-month outlook for proactive planning.  
+## 📈 Key Insights  
+
+- Peak revenue observed in specific months with seasonal demand.  
+- Top-performing products drive ~40% of total revenue.  
+- Certain regions outperform others in revenue generation.  
+- Forecast shows steady growth for upcoming 6 months.  
 
 ---
 
@@ -99,6 +138,6 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohitjaiswalrj32/) &nbsp;&nbsp;
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23FF5733?style=for-the-badge&logo=googlesites&logoColor=white)](https://rohitjaiswalrj32.github.io/Portfolio/) &nbsp;&nbsp;
-[![Gmail](https://img.shields.io/badge/Gmail-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rohitjaiswalrj32@gmail.com) &nbsp;&nbsp;
+[![Gmail](https://img.shields.io/badge/Gmail-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rohitjaiswalrj32@gmail.com)  
 
 ---
