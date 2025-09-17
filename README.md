@@ -27,9 +27,16 @@ It helps businesses gain insights into revenue trends, top-performing products, 
 
 --- 
 
-## 📂 Dataset Source  
+## 📂 Datasets  
 
-[Store Data (Kaggle)](https://www.kaggle.com/datasets/abuhumzakhan/store-data)
+| Dataset Name                  | Description                                | Source                                                                 |
+|-------------------------------|--------------------------------------------|------------------------------------------------------------------------|
+| store_data.csv                 | Raw sales dataset from Kaggle               | [Store Data (Kaggle)](https://www.kaggle.com/datasets/abuhumzakhan/store-data) |
+| cleaned_store_data.csv         | Cleaned & preprocessed dataset              | Derived from original raw data                                          |
+| sales_data_excel.csv           | Historical sales dataset for analysis      | Derived from cleaned data                                               |
+| sales_forecast_6m.csv          | Sales forecast for next 6 months            | Generated using Facebook Prophet                                        |
+| sales_forecast_6m_new.csv       | Updated forecast dataset (if applicable)   | Generated after additional processing                                   |
+| combined_actual_forecast.csv   | Combined actual & forecasted sales dataset  | Merged historical + forecast data                                       |
 
 ---
 
