@@ -111,7 +111,7 @@ SQL queries performed in **MySQL Workbench**:
 ---
 
 ## 🖼️ Dashboard Preview  
-*(Insert Screenshot after publishing)*  
+(screenshots/Page%201.png)  
 
 ---
 
