@@ -111,7 +111,9 @@ SQL queries performed in **MySQL Workbench**:
 ---
 
 ## 🖼️ Dashboard Preview  
-(screenshots/Page%201.png)  
+![Overview](screenshots/Page%201.png)
+![Sales Performance](screenshots/Page%202.png)
+![Forecast & Trend](screenshots/Page%203.png)
 
 ---
 
